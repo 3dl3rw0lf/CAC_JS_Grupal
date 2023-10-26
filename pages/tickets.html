@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conf Bs As</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/interaction.js" defer></script>
+  <link rel="stylesheet" href="../assets/styles/estilos.css">
+</head>
+<header>
+  <nav class="navbar bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../assets/images/codoacodo.png" alt="CaC Logo" class="img-header">
+        Conf Bs As
+      </a>
+      <div class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 link-light" href="../index.html">La conferencia</a>
+        <a class="me-3 py-2 link-secondary" href="#oradores">Los oradores</a>
+        <a class="me-3 py-2 link-secondary" href="#lugar">El lugar y la fecha</a>
+        <a class="me-3 py-2 link-secondary" href="#orador">Conviértete en orador</a>
+        <a class="me-3 py-2 link-success" href="./tickets.html">Comprar tickets</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container" style="padding: 10px;">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card border-primary mb-3 text-center" style="padding: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Estudiante</h5>
+            <p class="card-text">Tienen un descuento</p>
+            <p class="card-title">80%</p>
+            <p class="card-text">* presentar documentacion</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-info mb-3 text-center" style="padding: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Trainee</h5>
+            <p class="card-text">Tienen un descuento</p>
+            <p class="card-title">50%</p>
+            <p class="card-text">* presentar documentacion</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card border-warning mb-3 text-center" style="padding: 10px;">
+          <div class="card-body">
+            <h5 class="card-title">Junior</h5>
+            <p class="card-text">Tienen un descuento</p>
+            <p class="card-title">15%</p>
+            <p class="card-text">* presentar documentacion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-lg align-items-center">
+    <div class="row align-items-center" style="margin: 15px;">
+      <h6 class="text-center">VENTAS</h6>
+      <h1 class="text-center">VALOR DEL TICKET $200</h1>
+    </div>
+    <div class="row align-items-center" style="margin: 15px">
+      <div class="col-sm-12 col-lg-6">
+        <input id="input-nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <input id="input-apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+      </div>
+    </div>
+    <div class="row align-items-center" style="margin: 15px">
+      <div class="col">
+      <div class="input-group">
+        <input id="input-correo" type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+      </div>
+    </div>
+    </div>
+
+    <div class="row align-items-center" style="margin: 15px">
+      <div class="col-sm-12 col-lg-6">
+        <label for="input-cantidad" class="form-label">Cantidad</label>
+        <input id="input-cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+      </div>
+      <div class="col-sm-12 col-lg-6">
+        <label for="input-categoria" class="form-label">Categoria</label>
+        <select id="input-categoria" class="form-select" aria-label="input-categoria">
+          <option value="0" selected>Sin categoria</option>
+          <option value="80">Estudiante</option>
+          <option value="50">Trainee</option>
+          <option value="15">Junior</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row align-items-center" style="margin: 32px">
+      <div id="div-pagar" class="alert alert-info" role="alert">
+        Total a pagar: $
+      </div>
+    </div>
+
+    <div class="row align-items-center" style="margin: 15px">
+      <div class="col">
+        <button id="btn-borrar" class="btn btn-verde">Borrar</button>
+      </div>
+      <div class="col">
+        <button id="btn-comprar" class="btn btn-verde">Resumen</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<footer>
+  <nav class="navbar border-bottom border-body"
+    style="margin-top: 20px; height: 120px; width: 100%; background-color:rgb(29, 67, 88)">
+    <div class="container-fluid">
+      <a class="me-3 py-2 link-light" href="#">Preguntas frecuentes</a>
+      <a class="me-3 py-2 link-light" href="#">Contáctanos</a>
+      <a class="me-3 py-2 link-light" href="#">Prensa</a>
+      <a class="me-3 py-2 link-light" href="#">Conferencias</a>
+      <a class="me-3 py-2 link-light" href="#">Términos y condiciones</a>
+      <a class="me-3 py-2 link-light" href="#">Privacidad</a>
+      <a class="me-3 py-2 link-light" href="#">Estudiantes</a>
+    </div>
+  </nav>
+</footer>
+
+</html>

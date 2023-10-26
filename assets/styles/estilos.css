@@ -1,0 +1,76 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.btn-verde{
+    width: 100%;
+    color:white;
+    background-color:rgb(150, 201, 62)
+}
+
+.menu {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 20px 15px;
+}
+
+@media screen and (min-width:500px) {
+    
+    .menu {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+img.img-header {
+    width: 25%;
+    height: 25%;
+}
+
+img.img-body {
+    width: 100%;
+    height: 500px;
+}
+
+img.img-cien {
+    width: 100%;
+    height: 100%;
+}
+
+h6.texto-centro {
+    line-height:30px;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+    text-align: center;
+  }
+  
+  body {
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Hace que los elementos se ajusten a diferentes tamaños de pantalla */
+  @media screen and (max-width: 600px) {
+    .carousel-caption {
+        padding-top: 10%;
+        padding-bottom: 10%;
+      }
+  }
