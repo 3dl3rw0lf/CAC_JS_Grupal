@@ -8,6 +8,7 @@ Roles asignados a este proyecto:
 * [ ] Devs Front (JavaScript):
 * [ ] Tester:
 ---
+## Organización del proyecto
 ```
 CAC-JAVA-main
 |--assets
