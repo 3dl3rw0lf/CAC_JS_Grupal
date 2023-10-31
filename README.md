@@ -2,10 +2,20 @@
 ## Proyecto integrador grupal JavaScript Codo a Codo 2023
 ---
 Se utiliza como base el desarrollo de [Sergio López](https://github.com/seralopez/CAC-JAVA).
-Roles asignados a este proyecto:
+
+## Integrantes del proyecto:
+- Mariana Sánchez
+- Eleonora Evangelina Salas
+- Roxana Paola Quiroga
+- Sergio Alberto López
+- María Laura Azcona 
+- Gustavo Arauz
+
+
+## Roles asignados a este proyecto:
 * [ ] Líder Técnico: 
 * [ ] Devs Front (HTML - Bootstrap): Sergio López - 
-* [ ] Devs Front (JavaScript): elenora salas
+* [ ] Devs Front (JavaScript): Elenora Salas
 * [ ] Tester: Roxana Quiroga
 ---
 ## Organización del proyecto
