@@ -11,6 +11,16 @@ a {
     background-color:rgb(150, 201, 62)
 }
 
+#btn-comprar:hover{
+    background-color: #198754;
+    color: #fff;
+}
+
+#btn-borrar:hover{
+    background-color:#bb2d3b;
+    color: #fff;
+}
+
 @media (max-width:500px) {
     
     .div-margin {
