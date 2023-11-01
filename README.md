@@ -11,29 +11,29 @@ Se utiliza como base el desarrollo de [Sergio López](https://github.com/seralop
 - María Laura Azcona 
 - Gustavo Arauz
 
-
 ## Roles asignados a este proyecto:
-* [ ] Líder Técnico: 
-* [ ] Devs Front (HTML - Bootstrap): Sergio López - 
-* [ ] Devs Front (JavaScript): Elenora Salas, María Laura Azcona
-* [ ] Tester: Roxana Quiroga
+* [ ] Líder Técnico: Gustavo Arauz
+* [ ] Devs Front (HTML - Bootstrap): Sergio López
+* [ ] Devs Front (JavaScript): Mariana Sánchez - María Laura Azcona
+* [ ] Tester: Roxana Quiroga - Elenora Salas
 ---
 ## Organización del proyecto
 ```
 CAC-JAVA-main
 |--assets
-|   |--images
-|   |--ada.jpeg
-|   |--bal .jpg
-|   |--ba2.jpg
-|   |--ba3.jpg
-|   |--bill.jpg
-|   |--codoacodo.png
-|   |--hawaiijpg
-|   |--hawaii2.jpg
-|   |--hawaii3.jpg
-|   |--honolulu.jpg
-|   └--steve.jpg
+|   |--favicon.ico
+|   └--images
+|      |--ada.jpeg
+|      |--bal .jpg
+|      |--ba2.jpg
+|      |--ba3.jpg
+|      |--bill.jpg
+|      |--codoacodo.png
+|      |--hawaiijpg
+|      |--hawaii2.jpg
+|      |--hawaii3.jpg
+|      |--honolulu.jpg
+|      └--steve.jpg
 |--js
 |   └--interaction.js
 |--styles
