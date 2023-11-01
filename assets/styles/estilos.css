@@ -11,19 +11,26 @@ a {
     background-color:rgb(150, 201, 62)
 }
 
-.menu {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-padding: 20px 15px;
+@media (max-width:500px) {
+    
+    .div-margin {
+        margin: 5px;
+    }
+    .menu-desk{
+        display: none;
+    }
+    .menu-movil{
+        display: block;
+    }
 }
 
-@media screen and (min-width:500px) {
+@media (min-width:500px) {
     
-    .menu {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+    .menu-desk{
+        display: block;
+    }
+    .menu-movil{
+        display: none;
     }
 }
 
@@ -67,7 +74,6 @@ h6.texto-centro {
     height: auto;
   }
   
-  /* Hace que los elementos se ajusten a diferentes tamaños de pantalla */
   @media screen and (max-width: 600px) {
     .carousel-caption {
         padding-top: 10%;
