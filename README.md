@@ -15,7 +15,7 @@ Se utiliza como base el desarrollo de [Sergio López](https://github.com/seralop
 ## Roles asignados a este proyecto:
 * [ ] Líder Técnico: 
 * [ ] Devs Front (HTML - Bootstrap): Sergio López - 
-* [ ] Devs Front (JavaScript): Elenora Salas
+* [ ] Devs Front (JavaScript): Elenora Salas, María Laura Azcona
 * [ ] Tester: Roxana Quiroga
 ---
 ## Organización del proyecto
