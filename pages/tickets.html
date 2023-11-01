@@ -13,63 +13,88 @@
     crossorigin="anonymous"></script>
   <script src="../assets/js/interaction.js" defer></script>
   <link rel="stylesheet" href="../assets/styles/estilos.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" />
 </head>
 <header>
-  <nav class="navbar bg-dark" data-bs-theme="dark">
+<nav class="navbar bg-dark menu-desk" data-bs-theme="dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/images/codoacodo.png" alt="CaC Logo" class="img-header">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/images/codoacodo.png" alt="CaC Logo" class="img-header">
         Conf Bs As
       </a>
       <div class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-light" href="../index.html">La conferencia</a>
-        <a class="me-3 py-2 link-secondary" href="#oradores">Los oradores</a>
-        <a class="me-3 py-2 link-secondary" href="#lugar">El lugar y la fecha</a>
-        <a class="me-3 py-2 link-secondary" href="#orador">Conviértete en orador</a>
+        <a class="me-3 py-2 link-secondary" href="./index.html#conferencia">La conferencia</a>
+        <a class="me-3 py-2 link-secondary" href="./index.html#oradores">Los oradores</a>
+        <a class="me-3 py-2 link-secondary" href="./index.html#lugar">El lugar y la fecha</a>
+        <a class="me-3 py-2 link-secondary" href="./index.html#orador">Conviértete en orador</a>
         <a class="me-3 py-2 link-success" href="./tickets.html">Comprar tickets</a>
       </div>
     </div>
   </nav>
+
+  <nav class="navbar navbar-dark bg-dark menu-movil" data-bs-theme="dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <a>
+          <img src="./assets/images/codoacodo.png" alt="CaC Logo" class="img-header">
+          Conf Bs As
+        </a>
+      </button>
+    </div>
+  </nav>
+  
+  <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <div class="bg-dark p-4">
+      <p class="me-3 py-2 link-secondary" href="../index.html#conferencia">La conferencia</p>
+      <p class="me-3 py-2 link-secondary" href="../index.html#oradores">Los oradores</p>
+      <p class="me-3 py-2 link-secondary" href="../index.html#lugar">El lugar y la fecha</p>
+      <p class="me-3 py-2 link-secondary" href="../index.html#orador">Conviértete en orador</p>
+      <p class="me-3 py-2 link-success" href="./tickets.html">Comprar tickets</p>
+    </div>
+  </div>
 </header>
 
 <body>
-  <div class="container" style="padding: 10px;">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-      <div class="col">
-        <div class="card border-primary mb-3 text-center" style="padding: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Estudiante</h5>
-            <p class="card-text">Tienen un descuento</p>
-            <p class="card-title">80%</p>
-            <p class="card-text">* presentar documentacion</p>
+  <div class="col-9 mx-auto" style="margin: 10px">
+    <div class="container" style="padding: 10px;">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card border-primary mb-2 text-center" style="padding: 10px;">
+            <div class="card-body">
+              <h5 class="card-title">Estudiante</h5>
+              <p class="card-text">Tienen un descuento</p>
+              <p class="card-title">80%</p>
+              <p class="card-text">* presentar documentacion</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card border-info mb-3 text-center" style="padding: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Trainee</h5>
-            <p class="card-text">Tienen un descuento</p>
-            <p class="card-title">50%</p>
-            <p class="card-text">* presentar documentacion</p>
+        <div class="col">
+          <div class="card border-info mb-2 text-center" style="padding: 10px;">
+
+            <div class="card-body">
+              <h5 class="card-title">Trainee</h5>
+              <p class="card-text">Tienen un descuento</p>
+              <p class="card-title">50%</p>
+              <p class="card-text">* presentar documentacion</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card border-warning mb-3 text-center" style="padding: 10px;">
-          <div class="card-body">
-            <h5 class="card-title">Junior</h5>
-            <p class="card-text">Tienen un descuento</p>
-            <p class="card-title">15%</p>
-            <p class="card-text">* presentar documentacion</p>
+        <div class="col">
+          <div class="card border-warning mb-2 text-center" style="padding: 10px;">
+            <div class="card-body">
+              <h5 class="card-title">Junior</h5>
+              <p class="card-text">Tienen un descuento</p>
+              <p class="card-title">15%</p>
+              <p class="card-text">* presentar documentacion</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 
   <div class="container-lg align-items-center">
     <div class="row align-items-center" style="margin: 15px;">
@@ -78,24 +103,26 @@
     </div>
     <div class="row align-items-center" style="margin: 15px">
       <div class="col-sm-12 col-lg-6">
-        <input id="input-nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+        <input id="input-nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
       </div>
       <div class="col-sm-12 col-lg-6">
-        <input id="input-apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+        <input id="input-apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+          required>
       </div>
     </div>
     <div class="row align-items-center" style="margin: 15px">
       <div class="col">
-      <div class="input-group">
-        <input id="input-correo" type="text" class="form-control" placeholder="Correo" aria-label="Correo">
+        <div class="input-group">
+          <input id="input-correo" type="text" class="form-control" placeholder="Correo" aria-label="Correo" required>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class="row align-items-center" style="margin: 15px">
       <div class="col-sm-12 col-lg-6">
         <label for="input-cantidad" class="form-label">Cantidad</label>
-        <input id="input-cantidad" type="text" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+        <input id="input-cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
+          required>
       </div>
       <div class="col-sm-12 col-lg-6">
         <label for="input-categoria" class="form-label">Categoria</label>
@@ -110,20 +137,19 @@
 
     <div class="row align-items-center" style="margin: 32px">
       <div id="div-pagar" class="alert alert-info" role="alert">
-        Total a pagar: $
+        Ingrese sus datos
       </div>
     </div>
 
     <div class="row align-items-center" style="margin: 15px">
-      <div class="col">
+      <div class="col div-margin">
         <button id="btn-borrar" class="btn btn-verde">Borrar</button>
       </div>
-      <div class="col">
+      <div class="col div-margin">
         <button id="btn-comprar" class="btn btn-verde">Resumen</button>
       </div>
     </div>
   </div>
-
 </body>
 
 <footer>
