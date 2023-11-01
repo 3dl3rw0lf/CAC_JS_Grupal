@@ -11,6 +11,16 @@ a {
     background-color:rgb(150, 201, 62)
 }
 
+.btn-verde:hover{
+    color:white;
+    background-color:rgb(150, 201, 62) 
+}
+
+.aviso{
+    color: red;
+    font-size: small;
+}
+
 @media (max-width:500px) {
     
     .div-margin {

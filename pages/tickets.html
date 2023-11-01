@@ -104,17 +104,20 @@
     <div class="row align-items-center" style="margin: 15px">
       <div class="col-sm-12 col-lg-6">
         <input id="input-nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+        <p class="aviso" id="aviso-nombre"></p>
       </div>
       <div class="col-sm-12 col-lg-6">
         <input id="input-apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
           required>
+          <p class="aviso" id="aviso-apellido"></p>
       </div>
     </div>
     <div class="row align-items-center" style="margin: 15px">
       <div class="col">
         <div class="input-group">
-          <input id="input-correo" type="text" class="form-control" placeholder="Correo" aria-label="Correo" required>
+          <input id="input-correo" type="email" class="form-control" placeholder="Correo" aria-label="Correo" required>
         </div>
+        <p class="aviso" id="aviso-mail"></p>
       </div>
     </div>
 
@@ -122,13 +125,12 @@
       <div class="col-sm-12 col-lg-6">
         <label for="input-cantidad" class="form-label">Cantidad</label>
         <input id="input-cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
-          required>
+          min="1" max="5" value="1" required>
       </div>
       <div class="col-sm-12 col-lg-6">
         <label for="input-categoria" class="form-label">Categoria</label>
         <select id="input-categoria" class="form-select" aria-label="input-categoria">
-          <option value="0" selected>Sin categoria</option>
-          <option value="80">Estudiante</option>
+          <option value="80" selected>Estudiante</option>
           <option value="50">Trainee</option>
           <option value="15">Junior</option>
         </select>
@@ -137,16 +139,16 @@
 
     <div class="row align-items-center" style="margin: 32px">
       <div id="div-pagar" class="alert alert-info" role="alert">
-        Ingrese sus datos
+        <h5 id="Total">Total a pagar: $ </h5>
       </div>
     </div>
 
     <div class="row align-items-center" style="margin: 15px">
       <div class="col div-margin">
-        <button id="btn-borrar" class="btn btn-verde">Borrar</button>
+        <button type="reset" id="btn-borrar" class="btn btn-verde">Borrar</button>
       </div>
       <div class="col div-margin">
-        <button id="btn-comprar" class="btn btn-verde">Resumen</button>
+        <button type="button" id="btn-comprar" class="btn btn-verde">Resumen</button>
       </div>
     </div>
   </div>
