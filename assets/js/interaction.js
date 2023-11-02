@@ -21,23 +21,24 @@ btnResumen.addEventListener("click", function() {
   const elementoApellido = document.getElementById("input-apellido");
   const elementoMail= document.getElementById("input-correo");
   const emailRegex =  /\S+@\S+\.\S+/;
+  const nomApeRegex =  /^[A-Za-zÑñ]+$/;
 
   const nombre = elementoNombre.value;
   const apellido = elementoApellido.value;
   const mail= elementoMail.value;
   if (elementoNombre !== null && elementoApellido !== null) { 
-    console.log('el nombre es' + nombre);
-    console.log('el apellido es' + apellido);
+    console.log('el nombre es ' + nombre);
+    console.log('el apellido es ' + apellido);
   } 
-  if (nombre==" " || nombre.length == 0 || /^\s+$/.test(nombre) || apellido==" "|| 
-      apellido.length == 0 || mail==" " || !(emailRegex.test(mail))){
-    if (nombre==" " || nombre.length == 0 || /^\s+$/.test(nombre)){
+  if (nombre==" " || nombre.length == 0 || !(nomApeRegex.test(nombre))|| apellido==" "|| 
+      apellido.length == 0 || apellido.length == 0 || !(nomApeRegex.test(apellido))|| mail==" " || !(emailRegex.test(mail))){
+    if (nombre==" " || nombre.length == 0 || !(nomApeRegex.test(nombre))){
         document.getElementById('aviso-nombre').innerHTML='Debe ingresar un nombre válido';
     }
-    if (apellido==" " || apellido.length == 0 || /^\s+$/.test(apellido)){
+    if (apellido==" " || apellido.length == 0 || !(nomApeRegex.test(apellido))){
         document.getElementById('aviso-apellido').innerHTML='Debe ingresar un apellido válido';
     }
-    console.log(emailRegex.test(mail.value));
+    //console.log(emailRegex.test(mail.value));
     if (mail==" " || mail.length == 0 || !(emailRegex.test(mail)) ){
         document.getElementById('aviso-mail').innerHTML='Debe ingresar un correo electrónico válido';
     }
