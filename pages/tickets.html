@@ -120,14 +120,13 @@
     <div class="row align-items-center" style="margin: 15px">
       <div class="col-sm-12 col-lg-6">
         <label for="input-cantidad" class="form-label">Cantidad</label>
-        <input id="input-cantidad" type="number" class="form-control" placeholder="Cantidad" aria-label="Cantidad"
+        <input id="input-cantidad" type="number" class="form-control" value="1" min="1" max="5" placeholder="Cantidad" aria-label="Cantidad"
           required>
       </div>
       <div class="col-sm-12 col-lg-6">
         <label for="input-categoria" class="form-label">Categoria</label>
         <select id="input-categoria" class="form-select" aria-label="input-categoria">
-          <option value="0" selected>Sin categoria</option>
-          <option value="80">Estudiante</option>
+          <option value="80" selected>Estudiante</option>
           <option value="50">Trainee</option>
           <option value="15">Junior</option>
         </select>
@@ -136,7 +135,7 @@
 
     <div class="row align-items-center" style="margin: 32px">
       <div id="div-pagar" class="alert alert-info" role="alert">
-        Ingrese sus datos
+        <h5 id="total">Total a Pagar: $</h5>
       </div>
     </div>
 
