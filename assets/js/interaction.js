@@ -42,7 +42,7 @@ btnResumen.addEventListener("click", function () {
     const nombre = elementoNombre.value;
     const apellido = elementoApellido.value;
     const correo = document.getElementById('input-correo').value;
-    
+
     validateName(nombre, "nombre");
     validateName(apellido, "apellido");
     validateMail(correo);
@@ -75,13 +75,13 @@ btnBorrar.addEventListener("click", function () {
   const inputNombre = document.getElementById("input-nombre");
   const inputApellido = document.getElementById("input-apellido");
   const inputCorreo = document.getElementById("input-correo");
- // const inputCategoria = document.getElementById("input-categoria")
-  //const inputCantidad = document.getElementById("input-cantidad")
+  const inputCategoria = document.getElementById("input-categoria")
+  const inputCantidad = document.getElementById("input-cantidad")
   
   inputNombre.value = "";
   inputApellido.value = "";
   inputCorreo.value = "";
-  //inputCategoria.value = 0;
-  //inputCantidad.value = 'Total a pagar: $'
+  inputCategoria.value = "80";
+  inputCantidad.value = 1;
   document.getElementById("total").innerHTML='Total a Pagar: $';
 });
