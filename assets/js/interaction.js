@@ -81,7 +81,7 @@ btnBorrar.addEventListener("click", function () {
   inputNombre.value = "";
   inputApellido.value = "";
   inputCorreo.value = "";
-  inputCategoria.value = "80";
+  inputCategoria.value = "sin categoria";
   inputCantidad.value = 1;
   document.getElementById("total").innerHTML='Total a Pagar: $';
 });
