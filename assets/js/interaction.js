@@ -52,13 +52,13 @@ btnResumen.addEventListener("click", function () {
       let cant = document.getElementById('input-cantidad').value;
       switch (categoria) {
         case "80":
-          resultado = 200 * 0.8 * parseInt(cant);
+          resultado = (200 - (200 * 0.8)) * parseInt(cant);
           break;
         case "50":
-          resultado = 200 * 0.5 * parseInt(cant);
+          resultado = (200 - (200 * 0.5)) * parseInt(cant);
           break;
         case "15":
-          resultado = 200 * 0.15 * parseInt(cant);
+          resultado = (200 - (200 * 0.15)) * parseInt(cant);
           break;
         default:
           resultado = 200 * parseInt(cant);
